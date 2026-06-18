@@ -1,0 +1,28 @@
+HERO (full viewport)
+  └─ Glacier/mountain background
+  └─ Your name + tagline overlay
+  └─ Subtle "scroll down" hint
+
+ABOUT ME (scrolls into view)
+  └─ Background: Different mountain scene
+  └─ Photo of you + bio card
+  └─ "Outside of tech" callout (skiing, hobbies)
+
+FEATURED PROJECT: GLACIER CALVING (full attention)
+  └─ Dramatic background (actual glacier imagery or your project viz)
+  └─ Project card with description, tech stack, live link
+  └─ Maybe a visualization/screenshot embedded
+
+OTHER PROJECTS (scroll through)
+  └─ Background: Subtle texture or gradient
+  └─ Project cards appear one by one as you scroll
+  └─ Staggered animation for visual interest
+
+SKILLS (smaller section)
+  └─ Background: Minimalist
+  └─ Skills in a clean grid/list
+
+CONTACT (CTA-focused)
+  └─ Background: Inspiring mountain/sunset
+  └─ Email, GitHub, LinkedIn, resume button
+  └─ Maybe a simple contact form
