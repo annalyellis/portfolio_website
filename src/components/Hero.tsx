@@ -44,7 +44,7 @@ export default function Hero() {
               planet safe.
             </p>
             <p>
-              I enjoy working in fast-paced, high-growth environments. This has lead me to work in 
+              I enjoy working in fast-paced, high-growth environments. This has led me to work in 
               multiple domains, including several AI startups and academic research at the Institute 
               of Geophysics and Planetary Physics at Scripps Institution of Oceanography.
             </p>
