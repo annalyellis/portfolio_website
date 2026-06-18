@@ -6,37 +6,20 @@ import { motion, useInView } from "framer-motion";
 const skillCategories = [
   {
     name: "Machine Learning",
-    skills: ["TensorFlow", "PyTorch", "scikit-learn", "vLLM", "CNN / LSTM", "Deep Learning"],
-  },
-  {
-    name: "Languages",
-    skills: ["Python", "JavaScript", "R", "SQL", "Java", "MATLAB"],
+    skills: ["TensorFlow", "PyTorch", "scikit-learn", "vLLM", "XGBoost", "LightGBM", "Keras"],
   },
   {
     name: "Frontend & Full Stack",
-    skills: ["React", "TypeScript", "React Native", "Flask", "HTML / CSS"],
+    skills: ["React", "Next.js", "TypeScript", "Flask", "HTML / CSS"],
   },
   {
     name: "Data & Visualization",
-    skills: ["pandas", "NumPy", "Matplotlib", "Plotly", "seaborn", "PostgreSQL"],
+    skills: ["Pandas", "NumPy", "Matplotlib", "Plotly", "Seaborn", "PostgreSQL"],
   },
   {
     name: "Cloud & Tools",
-    skills: ["AWS (EC2)", "Google Cloud", "Git", "Figma", "CVAT", "RStudio"],
+    skills: ["AWS", "Lambda", "Google Cloud", "Git", "Figma", "CVAT", "RStudio"],
   },
-];
-
-const coursework = [
-  "Deep Learning",
-  "Probabilistic ML",
-  "Recommender Systems",
-  "Data Structures & Algorithms",
-  "Systems for Scalable Analytics",
-  "Data Visualization",
-  "Data Management",
-  "Product Management",
-  "Mathematical Statistics",
-  "Linear Algebra",
 ];
 
 const fadeUp = {
@@ -51,10 +34,7 @@ export default function Skills() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section
-      id="skills"
-      className="py-28 lg:py-36"
-    >
+    <section id="skills" className="py-28 lg:py-36">
       <div className="max-w-5xl mx-auto px-6">
         <motion.div
           ref={ref}
@@ -62,10 +42,7 @@ export default function Skills() {
           animate={inView ? "visible" : "hidden"}
           variants={stagger}
         >
-          <motion.p
-            variants={fadeUp}
-            className="text-xs uppercase tracking-[0.35em] text-moss-300 mb-5"
-          >
+          <motion.p variants={fadeUp} className="text-xs uppercase tracking-[0.35em] text-moss-300 mb-5">
             Technical
           </motion.p>
           <motion.h2
@@ -75,21 +52,21 @@ export default function Skills() {
             Skills
           </motion.h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {skillCategories.map((cat, i) => (
               <motion.div
                 key={i}
                 variants={fadeUp}
-                className="bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:shadow-md hover:border-moss-200 transition-all duration-200"
+                className="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/20 hover:border-moss-400/50 transition-all duration-200"
               >
-                <h3 className="text-slate-800 font-semibold text-sm uppercase tracking-wider mb-4">
+                <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
                   {cat.name}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {cat.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="px-3 py-1 bg-moss-50 text-moss-700 text-sm rounded-full border border-moss-100"
+                      className="px-3 py-1 bg-moss-500/20 text-moss-300 text-sm rounded-full border border-moss-400/30"
                     >
                       {skill}
                     </span>
@@ -97,26 +74,8 @@ export default function Skills() {
                 </div>
               </motion.div>
             ))}
-          </div>
 
-          <motion.div
-            variants={fadeUp}
-            className="bg-white rounded-xl p-6 shadow-sm border border-slate-100"
-          >
-            <h3 className="text-slate-800 font-semibold text-sm uppercase tracking-wider mb-4">
-              Relevant Coursework
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {coursework.map((course) => (
-                <span
-                  key={course}
-                  className="px-3 py-1 bg-slate-50 text-slate-600 text-sm rounded-full border border-slate-200"
-                >
-                  {course}
-                </span>
-              ))}
-            </div>
-          </motion.div>
+          </div>
         </motion.div>
       </div>
     </section>

@@ -5,8 +5,8 @@ import { useState, useEffect } from "react";
 const links = [
   { label: "About", href: "#hero" },
   { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -34,7 +34,6 @@ export default function Nav() {
           Annaly Ellis
         </a>
 
-        {/* Desktop links */}
         <div className="hidden md:flex gap-8">
           {links.map((link) => (
             <a
@@ -47,7 +46,6 @@ export default function Nav() {
           ))}
         </div>
 
-        {/* Mobile hamburger */}
         <button
           className="md:hidden text-white"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -61,7 +59,6 @@ export default function Nav() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden bg-white/15 backdrop-blur-md px-6 py-6 flex flex-col gap-5 border-t border-white/20">
           {links.map((link) => (

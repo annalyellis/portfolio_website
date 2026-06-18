@@ -39,16 +39,21 @@ export default function Hero() {
             <p>
               My name is Annaly and I&apos;m a rising senior at UC San Diego studying Data Science
               and specializing in Machine Learning and Artificial Intelligence.
-              I&apos;m drawn to problems where data and engineering can drive real-world impact: 
+              I&apos;m drawn to problems where data and engineering can drive real-world impact:
               monitoring climate change, improving healthcare outcomes, and keeping people and our
               planet safe.
             </p>
             <p>
-              Though I go to school in San Diego, I grew up about as far north from San Diego you 
+              I enjoy working in fast-paced, high-growth environments. This has lead me to work in 
+              multiple domains, including several AI startups and academic research at the Institute 
+              of Geophysics and Planetary Physics at Scripps Institution of Oceanography.
+            </p>
+            <p>
+              Though I go to school in San Diego, I grew up about as far north from San Diego you
               can get in the continental US. I was born and raised in Anacortes, WA - a town in
               the San Juan Islands, the most northwestern part of Washington State. Outside of school
               and work I spend as much time as possible outside. I like to surf, climb, run, hike, and
-              ski (I'm on the UCSD ski team!).
+              ski (I&apos;m on the UCSD ski team!).
             </p>
           </motion.div>
 
@@ -65,8 +70,7 @@ export default function Hero() {
               See My Work
             </a>
             <a
-              href="/resume.pdf"
-              target="_blank"
+              href="mailto:anellis@ucsd.edu?subject=Resume%20Request"
               className="px-8 py-3 border border-white/50 hover:border-white text-white/80 hover:text-white text-sm font-medium tracking-wider uppercase transition-all duration-200 hover:-translate-y-0.5"
             >
               Resume →
@@ -79,9 +83,9 @@ export default function Hero() {
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="flex justify-center md:justify-end"
+          className="flex justify-center"
         >
-          <div className="relative w-60 md:w-72 lg:w-80">
+          <div className="relative w-72 md:w-80 lg:w-96">
             <div className="absolute top-4 right-[-12px] w-full h-full border-2 border-moss-400/50 z-0" />
             <div className="relative z-10 shadow-2xl overflow-hidden">
               <Image
